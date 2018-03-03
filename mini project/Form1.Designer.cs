@@ -48,10 +48,10 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.productInventory = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -86,31 +86,31 @@
             this.productToolStripMenuItem,
             this.employeeToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.fileToolStripMenuItem.Text = "&New";
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.cToolStripMenuItem.Text = "Customer...";
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.productToolStripMenuItem.Text = "Product...";
             // 
             // employeeToolStripMenuItem
             // 
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.employeeToolStripMenuItem.Text = "Employee...";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.closeToolStripMenuItem.Text = "&Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -119,7 +119,7 @@
             this.recentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.recentToolStripMenuItem.Text = "&Recent...";
             // 
             // toolStripComboBox1
@@ -195,7 +195,7 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.productInventory);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.HotTrack = true;
@@ -205,27 +205,38 @@
             this.tabControl1.Size = new System.Drawing.Size(584, 506);
             this.tabControl1.TabIndex = 4;
             // 
-            // tabPage1
+            // productInventory
             // 
-            this.tabPage1.AutoScroll = true;
-            this.tabPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(576, 480);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Product Inventory";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.productInventory.AutoScroll = true;
+            this.productInventory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productInventory.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.productInventory.Location = new System.Drawing.Point(4, 22);
+            this.productInventory.Name = "productInventory";
+            this.productInventory.Padding = new System.Windows.Forms.Padding(3);
+            this.productInventory.Size = new System.Drawing.Size(576, 480);
+            this.productInventory.TabIndex = 0;
+            this.productInventory.Text = "Product Inventory";
+            this.productInventory.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(576, 477);
+            this.tabPage2.Size = new System.Drawing.Size(576, 480);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Customer List";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(576, 480);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Employee List";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -235,16 +246,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(576, 487);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Employee List";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -292,7 +293,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage productInventory;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
