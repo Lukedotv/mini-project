@@ -52,8 +52,16 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataSet1 = new System.Data.DataSet();
+            this.dataTable1 = new System.Data.DataTable();
+            this.dataTable2 = new System.Data.DataTable();
+            this.dataTable3 = new System.Data.DataTable();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -247,6 +255,27 @@
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "NewDataSet";
+            this.dataSet1.Tables.AddRange(new System.Data.DataTable[] {
+            this.dataTable1,
+            this.dataTable2,
+            this.dataTable3});
+            // 
+            // dataTable1
+            // 
+            this.dataTable1.CaseSensitive = false;
+            this.dataTable1.TableName = "Table1";
+            // 
+            // dataTable2
+            // 
+            this.dataTable2.TableName = "Table2";
+            // 
+            // dataTable3
+            // 
+            this.dataTable3.TableName = "Table3";
+            // 
             // FormMain
             // 
             this.AccessibleDescription = "This admin tool simulates inventory, customer and employee management";
@@ -261,6 +290,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -268,6 +298,10 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,6 +332,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Data.DataSet dataSet1;
+        private System.Data.DataTable dataTable1;
+        private System.Data.DataTable dataTable2;
+        private System.Data.DataTable dataTable3;
     }
 }
 
